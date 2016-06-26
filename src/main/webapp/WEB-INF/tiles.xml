@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	<definition name="common" template="/site/templates/template.jsp">
+		<put-attribute name="header" value="/site/templates/header.jsp"/>
+		<put-attribute name="footer" value="/site/templates/footer.jsp"/>
+	</definition>
+	
+	<!-- Client pages -->
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Index"></put-attribute>
+		<put-attribute name="body" value="/site/index.jsp"/>
+	</definition>
+	
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login"></put-attribute>
+		<put-attribute name="body" value="/site/login.jsp"/>
+	</definition>
+	
+	<definition name="registry" extends="common">
+		<put-attribute name="title" value="Registry"></put-attribute>
+		<put-attribute name="body" value="/site/registry.jsp"/>
+	</definition>
+	
+	<definition name="cart" extends="common">
+		<put-attribute name="title" value="Your cart"></put-attribute>
+		<put-attribute name="body" value="/site/cart.jsp"/>
+	</definition>
+	
+	<definition name="news" extends="common">
+		<put-attribute name="title" value="News"></put-attribute>
+		<put-attribute name="body" value="/site/news.jsp"/>
+	</definition>
+	
+	<definition name="preview" extends="common">
+		<put-attribute name="title" value="Preview"></put-attribute>
+		<put-attribute name="body" value="/site/preview.jsp"/>
+	</definition>
+	
+	<definition name="price_sock" extends="common">
+		<put-attribute name="title" value="Giá sốc"></put-attribute>
+		<put-attribute name="body" value="/site/price_sock.jsp"/>
+	</definition>
+	
+	<definition name="profile" extends="common">
+		<put-attribute name="title" value="Profile"></put-attribute>
+		<put-attribute name="body" value="/site/profile.jsp"/>
+	</definition>
+	
+	<definition name="contact" extends="common">
+		<put-attribute name="title" value="Contact"></put-attribute>
+		<put-attribute name="body" value="/site/contact.jsp"/>
+	</definition>
+	
+	<definition name="readnews" extends="common">
+		<put-attribute name="title" value="News"></put-attribute>
+		<put-attribute name="body" value="/site/readnews.jsp"/>
+	</definition>
+	
+	<definition name="intro" extends="common">
+		<put-attribute name="title" value="Giới thiệu về Pico"></put-attribute>
+		<put-attribute name="body" value="/site/intro.jsp"/>
+	</definition>
+	
+	<definition name="intro-address" extends="common">
+		<put-attribute name="title" value="Hệ thống chuỗi siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="body" value="/site/intro-address.jsp"/>
+	</definition>
+	
+	<definition name="recruit" extends="common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico - Tuyển dụng"></put-attribute>
+		<put-attribute name="body" value="/site/recruit.jsp"/>
+	</definition>
+	
+	<definition name="member_cart" extends="common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico - Thẻ thành viên"></put-attribute>
+		<put-attribute name="body" value="/site/member_cart.jsp"/>
+	</definition>
+	
+	<definition name="info" extends="common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="body" value="/site/info.jsp"/>
+	</definition>
+	
+	<definition name="list_cate" extends="common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="body" value="/site/list_cate.jsp"/>
+	</definition>
+	
+	<definition name="result" extends="common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="body" value="/site/result.jsp"/>
+	</definition>
+	
+	<definition name="order" extends="common">
+		<put-attribute name="title" value="Đặt hàng"></put-attribute>
+		<put-attribute name="body" value="/site/order.jsp"/>
+	</definition>
+	
+	<!-- Admin pages -->
+	<definition name="ad_common" template="/admin/templates/template.jsp">
+		<put-attribute name="header" value="/admin/templates/header.jsp"/>
+		<put-attribute name="left_side" value="/admin/templates/left-side.jsp"></put-attribute>
+		<put-attribute name="footer" value="/admin/templates/footer.jsp"/>
+	</definition>
+	
+	<definition name="ad_index" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico - Admin"></put-attribute>
+		<put-attribute name="content" value="/admin/index.jsp"/>
+	</definition>
+	
+	<definition name="ad_categories" extends="ad_common">
+		<put-attribute name="title" value="Danh sách thể loại"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/categories.jsp"/>
+	</definition>
+	<definition name="ad_edit_category" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/edit-category.jsp"/>
+	</definition>
+	
+	<definition name="ad_contacts" extends="ad_common">
+		<put-attribute name="title" value="Danh sách thể loại"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/contacts.jsp"/>
+	</definition>
+	<definition name="ad_edit_contact" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/edit-contact.jsp"/>
+	</definition>
+	
+	<definition name="ad_orders" extends="ad_common">
+		<put-attribute name="title" value="Danh sách thể loại"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/orders.jsp"/>
+	</definition>
+	<definition name="ad_edit_order" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/edit-order.jsp"/>
+	</definition>
+	
+	<definition name="ad_posts" extends="ad_common">
+		<put-attribute name="title" value="Danh sách thể loại"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/posts.jsp"/>
+	</definition>
+	<definition name="ad_edit_post" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/edit-post.jsp"/>
+	</definition>
+	
+	<definition name="ad_promotions" extends="ad_common">
+		<put-attribute name="title" value="Danh sách thể loại"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/promotions.jsp"/>
+	</definition>
+	<definition name="ad_edit_promotion" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/edit-promotion.jsp"/>
+	</definition>
+	
+	<definition name="ad_products" extends="ad_common">
+		<put-attribute name="title" value="Danh sách thể loại"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/products.jsp"/>
+	</definition>
+	<definition name="ad_edit_product" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/edit-product.jsp"/>
+	</definition>
+	
+	<definition name="ad_users" extends="ad_common">
+		<put-attribute name="title" value="Danh sách thể loại"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/users.jsp"/>
+	</definition>
+	<definition name="ad_edit_user" extends="ad_common">
+		<put-attribute name="title" value="Siêu thị điện máy Pico"></put-attribute>
+		<put-attribute name="content" value="/admin/pages/edit-user.jsp"/>
+	</definition>
+	
+</tiles-definitions>
