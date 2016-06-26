@@ -1,5 +1,4 @@
 ## Giới thiệu
-Website là đồ án môn lập trình web. It got 9đ. Phiên bản hiện tại là phiển bản không đầy đủ, hiện phiên bản đầy đủ đã bị mất.
 Web siêu thị điện máy.
 
 ## Chức năng
@@ -11,11 +10,14 @@ Web siêu thị điện máy.
 
 ## Công nghệ áp dụng
 - Spring (spring mvc)
-- Hibernate
+- JDBCTemplate of spring
 - jQuery/Ajax
 
 ## Tác giả
 - [Ngô Bảo Toàn]
+
+## Lưu ý
+Project được chia sẻ nhằm mục đích học hỏi, vui lòng liên hệ với tôi nếu có vấn đề gì trong project hoặc có giải pháp nào hay xin vui lòng chia sẻ. Cảm ơn!!!
 
 [//]:#
 [Ngô Bảo Toàn]: <https://www.facebook.com/baotoan95>
